@@ -11,6 +11,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	"k8s.io/utils/ptr"
+	"fmt"
 )
 
 const (
@@ -89,7 +90,7 @@ func addPVCBinVolume(pod *corev1.Pod, defaultSize, defaultClass string) {
 
     volumeSource := corev1.VolumeSource{
         PersistentVolumeClaim: &corev1.PersistentVolumeClaimVolumeSource{
-            ClaimName: pvcName,
+            ClaimName: oneagent-bin-pvc,
         },
     }
 
@@ -104,9 +105,17 @@ func addPVCBinVolume(pod *corev1.Pod, defaultSize, defaultClass string) {
     if pod.Annotations == nil {
         pod.Annotations = map[string]string{}
     }
-    pod.Annotations["pvc-webhook/storage-size"] = "2Gi"
-    pod.Annotations["pvc-webhook/storage-class"] = "robin-repl-3"
-    pod.Annotations["pvc-webhook/claim"] = "oneagent-bin-pvc"
+
+        if _, ok := pod.Annotations["pvc-webhook/storage-size"]; !ok {
+        pod.Annotations["pvc-webhook/storage-size"] = "2Gi"
+    }
+    if _, ok := pod.Annotations["pvc-webhook/storage-class"]; !ok {
+        pod.Annotations["pvc-webhook/storage-class"] = "robin-repl-3"
+    }
+    if _, ok := pod.Annotations["pvc-webhook/claim"]; !ok {
+        pod.Annotations["pvc-webhook/claim"] = "oneagent-bin-pvc"
+    }
+
 }
 
 // The end of new function
