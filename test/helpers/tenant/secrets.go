@@ -7,7 +7,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/test/project"
+	"github.com/rkitindi-kr/dynatrace-operator/test/project"
 	"github.com/pkg/errors"
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/require"

@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme"
 	"github.com/pkg/errors"
 	"k8s.io/client-go/rest"
 	ctrl "sigs.k8s.io/controller-runtime"

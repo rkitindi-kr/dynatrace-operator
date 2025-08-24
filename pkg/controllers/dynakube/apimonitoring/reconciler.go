@@ -3,11 +3,11 @@ package apimonitoring
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	dtclient "github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/k8sentity"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/conditions"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	dtclient "github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/k8sentity"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/conditions"
 	"github.com/pkg/errors"
 )
 

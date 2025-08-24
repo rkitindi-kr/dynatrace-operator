@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/version"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/version"
 	"github.com/stretchr/testify/assert"
 )
 

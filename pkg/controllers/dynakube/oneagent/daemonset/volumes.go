@@ -1,12 +1,12 @@
 package daemonset
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	dtcsi "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi"
-	csivolumes "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi/driver/volumes"
-	hostvolumes "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi/driver/volumes/host"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/connectioninfo"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/proxy"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	dtcsi "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi"
+	csivolumes "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi/driver/volumes"
+	hostvolumes "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi/driver/volumes/host"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/connectioninfo"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/proxy"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/utils/ptr"
 )

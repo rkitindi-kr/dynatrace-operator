@@ -1,6 +1,6 @@
 package telemetryingest
 
-import "github.com/Dynatrace/dynatrace-operator/pkg/otelcgen"
+import "github.com/rkitindi-kr/dynatrace-operator/pkg/otelcgen"
 
 const (
 	ServiceNameSuffix = "-telemetry-ingest"

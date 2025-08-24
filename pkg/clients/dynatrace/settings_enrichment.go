@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/clients/utils"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/clients/utils"
 	"github.com/pkg/errors"
 )
 

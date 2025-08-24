@@ -3,8 +3,8 @@ package daemonset
 import (
 	"fmt"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/activegate/capability"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/activegate/capability"
 	corev1 "k8s.io/api/core/v1"
 )
 

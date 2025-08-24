@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/logd"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
 	"github.com/kubernetes-csi/csi-lib-utils/connection"
 	"github.com/kubernetes-csi/csi-lib-utils/rpc"
 	"golang.org/x/net/context"

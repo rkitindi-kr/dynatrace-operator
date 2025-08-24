@@ -1,7 +1,7 @@
 package extensions
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/consts"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/consts"
 )
 
 func (e *Extensions) SetName(name string) {

@@ -5,11 +5,11 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
-	dtclient "github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
-	dtclientmock "github.com/Dynatrace/dynatrace-operator/test/mocks/pkg/clients/dynatrace"
-	controllermock "github.com/Dynatrace/dynatrace-operator/test/mocks/pkg/controllers"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
+	dtclient "github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
+	dtclientmock "github.com/rkitindi-kr/dynatrace-operator/test/mocks/pkg/clients/dynatrace"
+	controllermock "github.com/rkitindi-kr/dynatrace-operator/test/mocks/pkg/controllers"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

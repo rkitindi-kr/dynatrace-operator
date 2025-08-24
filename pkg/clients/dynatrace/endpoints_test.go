@@ -3,7 +3,7 @@ package dynatrace
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme/fake"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme/fake"
 )
 
 func Test_dynatraceClient_getOneAgentConnectionInfoUrl(t *testing.T) {

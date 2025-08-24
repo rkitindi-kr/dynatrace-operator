@@ -3,7 +3,7 @@ package dynakube
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/status"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/status"
 	containerv1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/pkg/errors"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"

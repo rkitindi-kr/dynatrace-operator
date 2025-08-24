@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	dtclient "github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/activegate/capability"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/conditions"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	dtclient "github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/activegate/capability"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/conditions"
 	"github.com/pkg/errors"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )

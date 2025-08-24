@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	kubeobjects "github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/pod"
-	dtwebhook "github.com/Dynatrace/dynatrace-operator/pkg/webhook/mutation/pod/mutator"
+	kubeobjects "github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/pod"
+	dtwebhook "github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/mutation/pod/mutator"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

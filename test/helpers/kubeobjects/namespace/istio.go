@@ -6,9 +6,9 @@ import (
 	"context"
 	"path"
 
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/kubeobjects/manifests"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/platform"
-	"github.com/Dynatrace/dynatrace-operator/test/project"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/kubeobjects/manifests"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/platform"
+	"github.com/rkitindi-kr/dynatrace-operator/test/project"
 	corev1 "k8s.io/api/core/v1"
 	"sigs.k8s.io/e2e-framework/klient/decoder"
 	"sigs.k8s.io/e2e-framework/pkg/envconf"

@@ -3,8 +3,8 @@ package image
 import (
 	"path/filepath"
 
-	dtcsi "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi"
-	"github.com/Dynatrace/dynatrace-operator/pkg/logd"
+	dtcsi "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
 )
 
 var (

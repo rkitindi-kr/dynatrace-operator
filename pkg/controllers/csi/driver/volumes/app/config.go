@@ -1,7 +1,7 @@
 package app
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/logd"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
 	"github.com/prometheus/client_golang/prometheus"
 	"sigs.k8s.io/controller-runtime/pkg/metrics"
 )

@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme/fake"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/installconfig"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme/fake"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/installconfig"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"k8s.io/client-go/rest"

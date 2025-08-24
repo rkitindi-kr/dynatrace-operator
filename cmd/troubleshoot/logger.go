@@ -5,7 +5,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/logd"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	ctrlzap "sigs.k8s.io/controller-runtime/pkg/log/zap"

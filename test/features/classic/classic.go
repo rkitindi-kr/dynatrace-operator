@@ -5,10 +5,10 @@ package classic
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers"
-	dynakubeComponents "github.com/Dynatrace/dynatrace-operator/test/helpers/components/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/tenant"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers"
+	dynakubeComponents "github.com/rkitindi-kr/dynatrace-operator/test/helpers/components/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/tenant"
 	"sigs.k8s.io/e2e-framework/pkg/features"
 )
 

@@ -3,11 +3,11 @@ package dtpullsecret
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/token"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/conditions"
-	k8ssecret "github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/secret"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/timeprovider"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/token"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/conditions"
+	k8ssecret "github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/secret"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/timeprovider"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"

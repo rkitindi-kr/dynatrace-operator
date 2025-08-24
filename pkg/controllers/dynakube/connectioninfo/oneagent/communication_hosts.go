@@ -1,8 +1,8 @@
 package oaconnectioninfo
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	dtclient "github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	dtclient "github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
 )
 
 func GetCommunicationHosts(dk *dynakube.DynaKube) []dtclient.CommunicationHost {

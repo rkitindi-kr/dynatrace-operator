@@ -3,10 +3,10 @@ package extension
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme/fake"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/labels"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/timeprovider"
-	"github.com/Dynatrace/dynatrace-operator/pkg/version"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme/fake"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/labels"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/timeprovider"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/version"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

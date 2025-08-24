@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/dtversion"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/installconfig"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/dtversion"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/installconfig"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

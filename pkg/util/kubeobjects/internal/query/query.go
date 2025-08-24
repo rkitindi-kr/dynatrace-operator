@@ -5,9 +5,9 @@ import (
 	goerrors "errors"
 	"reflect"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme"
-	"github.com/Dynatrace/dynatrace-operator/pkg/logd"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/hasher"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/hasher"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"

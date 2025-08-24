@@ -10,7 +10,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/certificates"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/certificates"
 	"github.com/pkg/errors"
 )
 

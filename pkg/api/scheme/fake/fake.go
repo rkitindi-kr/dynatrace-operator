@@ -17,7 +17,7 @@ limitations under the License.
 package fake
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme"
 	admissionregistrationv1 "k8s.io/api/admissionregistration/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"

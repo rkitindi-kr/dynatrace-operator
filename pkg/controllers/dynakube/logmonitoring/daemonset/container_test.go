@@ -3,10 +3,10 @@ package daemonset
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/exp"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/shared/image"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/exp"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/shared/image"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	corev1 "k8s.io/api/core/v1"

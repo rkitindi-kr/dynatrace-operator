@@ -3,12 +3,12 @@ package capability
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/activegate"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/activegate/consts"
-	agutil "github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/activegate"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/labels"
-	"github.com/Dynatrace/dynatrace-operator/pkg/version"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/activegate"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/activegate/consts"
+	agutil "github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/activegate"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/labels"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/version"
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

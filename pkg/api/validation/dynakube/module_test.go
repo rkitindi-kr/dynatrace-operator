@@ -4,13 +4,13 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/activegate"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/extensions"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/kspm"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/installconfig"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/activegate"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/extensions"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/kspm"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/installconfig"
 	"github.com/stretchr/testify/assert"
 )
 

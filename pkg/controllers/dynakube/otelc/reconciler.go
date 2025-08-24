@@ -3,12 +3,12 @@ package otelc
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/otelc/configuration"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/otelc/endpoint"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/otelc/service"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/otelc/statefulset"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/otelc/configuration"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/otelc/endpoint"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/otelc/service"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/otelc/statefulset"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

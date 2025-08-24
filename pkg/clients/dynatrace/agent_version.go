@@ -4,11 +4,11 @@ import (
 	"context"
 	"io"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/arch"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/arch"
 	"github.com/pkg/errors"
 )
 
-// TODO: the `arch` params should be removed and instead always the "github.com/Dynatrace/dynatrace-operator/pkg/arch" should be used
+// TODO: the `arch` params should be removed and instead always the "github.com/rkitindi-kr/dynatrace-operator/pkg/arch" should be used
 
 // GetLatestAgent gets the latest agent package for the given OS and installer type.
 func (dtc *dynatraceClient) GetLatestAgent(ctx context.Context, os, installerType, flavor, arch string, technologies []string, skipMetadata bool, writer io.Writer) error {

@@ -150,15 +150,15 @@ if err != nil {
 {"level":"info","ts":"2023-11-20T09:25:16.261Z","logd":"automatic-api-monitoring","msg":"kubernetes cluster setting already exists","clusterLabel":"dynakube","cluster":"a9ef1d81-6950-4260-a3d4-8e969c590b8c"}
 {"level":"info","ts":"2023-11-20T09:25:16.273Z","logd":"dynakube","msg":"activegate statefulset is still deploying","dynakube":"dynakube"}
 {"error":"BOOM!","level":"error","logd":"dynakube","msg":"it happened","stacktrace":"BOOM!
-github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube.(*Controller).reconcile
-github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/dynakube_controller.go:168
+github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube.(*Controller).reconcile
+github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/dynakube_controller.go:168
    <...>
 sigs.k8s.io/controller-runtime@v0.16.3/pkg/internal/controller/controller.go:227
 runtime.goexit
 runtime/asm_amd64.s:1650","ts":"2023-11-20T09:25:16.273Z"}
 {"DynaKube":{"name":"dynakube","namespace":"dynatrace"},"controller":"dynakube","controllerGroup":"dynatrace.com","controllerKind":"DynaKube","error":"BOOM!","level":"error","logd":"main","msg":"Reconciler error","name":"dynakube","namespace":"dynatrace","reconcileID":"5d67fe9e-b6f0-4ad4-8634-aa66838aa685","stacktrace":"BOOM!
-github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube.(*Controller).reconcile
-github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/dynakube_controller.go:168
+github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube.(*Controller).reconcile
+github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/dynakube_controller.go:168
    <...>
 sigs.k8s.io/controller-runtime@v0.16.3/pkg/internal/controller/controller.go:227
 runtime.goexit
@@ -175,7 +175,7 @@ For example:
 package abc
 
 import (
-    "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta2/dynakube"
+    "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta2/dynakube"
 )
 ```
 
@@ -183,7 +183,7 @@ import (
 package abc
 
 import (
-    "github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
+    "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
 )
 ```
 
@@ -194,8 +194,8 @@ import (
 package abc
 
 import (
-    dynakubev1beta2  "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta2/dynakube"
-    dynakubev1beta3  "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube"
+    dynakubev1beta2  "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta2/dynakube"
+    dynakubev1beta3  "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube"
 )
 ```
 
@@ -203,8 +203,8 @@ import (
 package abc
 
 import (
-    edgeconnectv1alpha1 "github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha1/edgeconnect"
-    edgeconnectv1alpha2 "github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
+    edgeconnectv1alpha1 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha1/edgeconnect"
+    edgeconnectv1alpha2 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
 )
 ```
 
@@ -233,12 +233,12 @@ func (c component) getImage(dk *dynakube.DynaKube) (string, bool) {}
 package abc
 
 import (
-    dynatracev1beta2 "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta2/dynakube"
+    dynatracev1beta2 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta2/dynakube"
 )
 ```
 
 - Use `dynakube` or `edgeconnect` as variable name or function argument name.
-- Use import alias for api package: `dynatracev1alpha1 "github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha1"`
+- Use import alias for api package: `dynatracev1alpha1 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha1"`
 
 ## Logging
 

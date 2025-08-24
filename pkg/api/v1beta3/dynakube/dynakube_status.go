@@ -3,10 +3,10 @@ package dynakube
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/status"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube/activegate"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube/kspm"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube/oneagent"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/status"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube/activegate"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube/kspm"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube/oneagent"
 	"github.com/pkg/errors"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

@@ -3,10 +3,10 @@ package validation
 import (
 	"context"
 
-	v1alpha1 "github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha1/edgeconnect"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/installconfig"
-	"github.com/Dynatrace/dynatrace-operator/pkg/webhook/validation"
+	v1alpha1 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha1/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/installconfig"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/validation"
 	"github.com/pkg/errors"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/rest"

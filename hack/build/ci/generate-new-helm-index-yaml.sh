@@ -18,7 +18,7 @@ trap 'cleanup' ERR
 cp "config/helm/repos/stable/index.yaml" "config/helm/repos/stable/index.yaml.previous"
 
 helm repo index "${output_dir}" \
-    --url "https://github.com/Dynatrace/dynatrace-operator/releases/download/v${version_without_prefix}" \
+    --url "https://github.com/rkitindi-kr/dynatrace-operator/releases/download/v${version_without_prefix}" \
     --merge "./config/helm/repos/stable/index.yaml"
 
 mv -v "${output_dir}"/index.yaml ./config/helm/repos/stable/index.yaml

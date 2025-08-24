@@ -3,7 +3,7 @@
 package operator
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/kubeobjects/deployment"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/kubeobjects/deployment"
 	"sigs.k8s.io/e2e-framework/pkg/env"
 )
 

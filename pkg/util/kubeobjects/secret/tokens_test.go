@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme/fake"
-	"github.com/Dynatrace/dynatrace-operator/pkg/logd"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme/fake"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
 	"github.com/stretchr/testify/assert"
 	"k8s.io/apimachinery/pkg/types"
 )

@@ -3,7 +3,7 @@ package statefulset
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/telemetryingest"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/telemetryingest"
 	"github.com/stretchr/testify/assert"
 )
 

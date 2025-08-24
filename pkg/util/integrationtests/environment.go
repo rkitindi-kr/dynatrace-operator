@@ -6,14 +6,14 @@ import (
 	"path/filepath"
 	"testing"
 
-	latest "github.com/Dynatrace/dynatrace-operator/pkg/api/latest" //nolint:revive
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha1"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta1"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta2"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/projectpath"
+	latest "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest" //nolint:revive
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha1"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta1"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta2"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/projectpath"
 	"k8s.io/client-go/kubernetes/scheme"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/envtest"

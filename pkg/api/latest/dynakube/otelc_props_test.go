@@ -3,7 +3,7 @@ package dynakube
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/activegate"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/activegate"
 	"github.com/stretchr/testify/assert"
 )
 

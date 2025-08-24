@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/certificates"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/certificates"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/edgeconnect"
 	"github.com/pkg/errors"
 	_ "k8s.io/client-go/plugin/pkg/client/auth" // important for running operator locally
 	"k8s.io/client-go/rest"

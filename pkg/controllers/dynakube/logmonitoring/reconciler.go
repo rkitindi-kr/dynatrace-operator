@@ -3,14 +3,14 @@ package logmonitoring
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	dtclient "github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers"
-	oaconnectioninfo "github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/connectioninfo/oneagent"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/k8sentity"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/logmonitoring/configsecret"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/logmonitoring/daemonset"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/logmonitoring/logmonsettings"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	dtclient "github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers"
+	oaconnectioninfo "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/connectioninfo/oneagent"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/k8sentity"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/logmonitoring/configsecret"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/logmonitoring/daemonset"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/logmonitoring/logmonsettings"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

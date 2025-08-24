@@ -3,8 +3,8 @@ package daemonset
 import (
 	"fmt"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/logmonitoring/configsecret"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/logmonitoring/configsecret"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/utils/ptr"
 )

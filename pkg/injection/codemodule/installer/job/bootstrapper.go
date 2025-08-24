@@ -1,12 +1,12 @@
 package job
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/hasher"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/env"
-	jobutil "github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/job"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/labels"
-	maputils "github.com/Dynatrace/dynatrace-operator/pkg/util/map"
-	webhook "github.com/Dynatrace/dynatrace-operator/pkg/webhook/mutation/pod/mutator"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/hasher"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/env"
+	jobutil "github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/job"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/labels"
+	maputils "github.com/rkitindi-kr/dynatrace-operator/pkg/util/map"
+	webhook "github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/mutation/pod/mutator"
 	batchv1 "k8s.io/api/batch/v1"
 	corev1 "k8s.io/api/core/v1"
 )

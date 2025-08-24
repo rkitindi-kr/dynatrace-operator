@@ -3,12 +3,12 @@ package extension
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/extension/eec"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/extension/tls"
-	k8ssecret "github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/secret"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/timeprovider"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/extension/eec"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/extension/tls"
+	k8ssecret "github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/secret"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/timeprovider"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

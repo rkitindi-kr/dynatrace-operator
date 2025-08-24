@@ -4,14 +4,14 @@
 package dynakube
 
 import (
-	v1beta5 "github.com/Dynatrace/dynatrace-operator/pkg/api/latest"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/activegate"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/extensions"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/kspm"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/telemetryingest"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/shared/value"
+	v1beta5 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/activegate"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/extensions"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/kspm"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/telemetryingest"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/shared/value"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

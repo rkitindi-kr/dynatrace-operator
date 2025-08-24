@@ -6,9 +6,9 @@ import (
 	"os"
 	"path"
 
-	operatorconsts "github.com/Dynatrace/dynatrace-operator/pkg/consts"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/kubeobjects/secret"
-	"github.com/Dynatrace/dynatrace-operator/test/project"
+	operatorconsts "github.com/rkitindi-kr/dynatrace-operator/pkg/consts"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/kubeobjects/secret"
+	"github.com/rkitindi-kr/dynatrace-operator/test/project"
 	corev1 "k8s.io/api/core/v1"
 )
 

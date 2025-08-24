@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/timeprovider"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/timeprovider"
 	"github.com/stretchr/testify/assert"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/utils/ptr"

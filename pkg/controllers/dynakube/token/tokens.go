@@ -5,9 +5,9 @@ import (
 	"errors"
 	"slices"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	dtclient "github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/dynatraceapi"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	dtclient "github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/dynatraceapi"
 )
 
 type Tokens map[string]*Token

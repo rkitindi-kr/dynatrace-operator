@@ -1,10 +1,10 @@
 package modifiers
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/activegate/capability"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/activegate/internal/statefulset/builder"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/prioritymap"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/activegate/capability"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/activegate/internal/statefulset/builder"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/prioritymap"
 	corev1 "k8s.io/api/core/v1"
 )
 

@@ -5,7 +5,7 @@
 package mocks
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/clients/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/clients/edgeconnect"
 	mock "github.com/stretchr/testify/mock"
 )
 

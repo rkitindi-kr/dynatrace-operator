@@ -4,12 +4,12 @@
 package dynakube
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/shared/value"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube/activegate"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube/kspm"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube/logmonitoring"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube/oneagent"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/shared/value"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube/activegate"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube/kspm"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube/logmonitoring"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube/oneagent"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

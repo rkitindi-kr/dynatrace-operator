@@ -3,7 +3,7 @@ package dynatraceapi
 import (
 	"net/http"
 
-	dtclient "github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
+	dtclient "github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
 	"github.com/pkg/errors"
 )
 

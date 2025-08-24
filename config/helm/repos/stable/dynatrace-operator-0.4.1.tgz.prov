@@ -15,7 +15,7 @@ maintainers:
   name: luhi-DT
 name: dynatrace-operator
 sources:
-- - https://github.com/Dynatrace/dynatrace-operator
+- - https://github.com/rkitindi-kr/dynatrace-operator
 type: application
 version: 0.4.1
 

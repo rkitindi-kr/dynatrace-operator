@@ -3,8 +3,8 @@ package builder
 import (
 	"testing"
 
-	buildermock "github.com/Dynatrace/dynatrace-operator/pkg/util/builder/mocks"
-	modifiermock "github.com/Dynatrace/dynatrace-operator/test/mocks/pkg/util/builder"
+	buildermock "github.com/rkitindi-kr/dynatrace-operator/pkg/util/builder/mocks"
+	modifiermock "github.com/rkitindi-kr/dynatrace-operator/test/mocks/pkg/util/builder"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

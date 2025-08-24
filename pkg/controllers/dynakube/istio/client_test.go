@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/hasher"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/hasher"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	istiov1beta1 "istio.io/client-go/pkg/apis/networking/v1beta1"

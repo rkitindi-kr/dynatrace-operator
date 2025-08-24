@@ -6,11 +6,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/test/features/cloudnative/upgrade"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/components/operator"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/events"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/kubeobjects/environment"
+	"github.com/rkitindi-kr/dynatrace-operator/test/features/cloudnative/upgrade"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/components/operator"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/events"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/kubeobjects/environment"
 	"sigs.k8s.io/e2e-framework/pkg/env"
 	"sigs.k8s.io/e2e-framework/pkg/envconf"
 )

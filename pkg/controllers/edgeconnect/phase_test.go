@@ -3,9 +3,9 @@ package edgeconnect
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme/fake"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/status"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme/fake"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/status"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
 	"github.com/stretchr/testify/assert"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"

@@ -7,7 +7,7 @@ import (
 	"hash/fnv"
 	"net/http"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/clients/utils"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/clients/utils"
 	"golang.org/x/exp/maps"
 )
 

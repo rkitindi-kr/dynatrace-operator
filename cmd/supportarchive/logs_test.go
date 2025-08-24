@@ -9,8 +9,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/labels"
-	corev1mock "github.com/Dynatrace/dynatrace-operator/test/mocks/k8s.io/client-go/kubernetes/typed/core/v1"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/labels"
+	corev1mock "github.com/rkitindi-kr/dynatrace-operator/test/mocks/k8s.io/client-go/kubernetes/typed/core/v1"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

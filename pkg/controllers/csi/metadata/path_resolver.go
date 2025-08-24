@@ -3,7 +3,7 @@ package metadata
 import (
 	"path/filepath"
 
-	dtcsi "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi"
+	dtcsi "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi"
 )
 
 var ruxitAgentProcPath = filepath.Join("agent", "conf", "ruxitagentproc.conf")

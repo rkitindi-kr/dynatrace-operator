@@ -5,13 +5,13 @@ package switchmodes
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
-	"github.com/Dynatrace/dynatrace-operator/test/features/cloudnative"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers"
-	dynakubeComponents "github.com/Dynatrace/dynatrace-operator/test/helpers/components/dynakube"
-	oneagenthelper "github.com/Dynatrace/dynatrace-operator/test/helpers/components/oneagent"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/sample"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/tenant"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
+	"github.com/rkitindi-kr/dynatrace-operator/test/features/cloudnative"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers"
+	dynakubeComponents "github.com/rkitindi-kr/dynatrace-operator/test/helpers/components/dynakube"
+	oneagenthelper "github.com/rkitindi-kr/dynatrace-operator/test/helpers/components/oneagent"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/sample"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/tenant"
 	"sigs.k8s.io/e2e-framework/pkg/features"
 )
 

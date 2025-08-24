@@ -1,8 +1,8 @@
 package activegate
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/shared/communication"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/status"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/shared/communication"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/status"
 )
 
 // +kubebuilder:object:generate=true

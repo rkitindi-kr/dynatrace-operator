@@ -80,9 +80,9 @@ LABEL name="Dynatrace Operator" \
       io.k8s.description="Automate Kubernetes observability with Dynatrace" \
       io.k8s.display-name="Dynatrace Operator" \
       io.openshift.tags="observability,monitoring,dynatrace,operator,logging,metrics,tracing,prometheus,alerts" \
-      vcs-url="https://github.com/Dynatrace/dynatrace-operator.git" \
+      vcs-url="https://github.com/rkitindi-kr/dynatrace-operator.git" \
       vcs-type="git" \
-      changelog-url="https://github.com/Dynatrace/dynatrace-operator/releases"
+      changelog-url="https://github.com/rkitindi-kr/dynatrace-operator/releases"
 
 ENV OPERATOR=dynatrace-operator \
     USER_UID=1001 \

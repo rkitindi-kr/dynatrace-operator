@@ -5,14 +5,14 @@ package upgrade
 import (
 	"testing"
 
-	dynakubev1beta4 "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/test/features/cloudnative"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/components/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/components/operator"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/kubeobjects/namespace"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/sample"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/tenant"
+	dynakubev1beta4 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/test/features/cloudnative"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/components/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/components/operator"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/kubeobjects/namespace"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/sample"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/tenant"
 	"sigs.k8s.io/e2e-framework/pkg/features"
 )
 

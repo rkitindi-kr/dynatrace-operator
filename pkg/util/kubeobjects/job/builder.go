@@ -1,8 +1,8 @@
 package job
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/internal/builder"
-	maputils "github.com/Dynatrace/dynatrace-operator/pkg/util/map"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/internal/builder"
+	maputils "github.com/rkitindi-kr/dynatrace-operator/pkg/util/map"
 	batchv1 "k8s.io/api/batch/v1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

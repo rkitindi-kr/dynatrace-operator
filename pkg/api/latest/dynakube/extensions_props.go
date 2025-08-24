@@ -1,7 +1,7 @@
 package dynakube
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/extensions"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/extensions"
 )
 
 func (dk *DynaKube) Extensions() *extensions.Extensions {

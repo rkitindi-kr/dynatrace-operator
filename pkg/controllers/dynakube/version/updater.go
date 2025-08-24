@@ -4,10 +4,10 @@ import (
 	"context"
 	"strings"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/status"
-	dtclient "github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
-	"github.com/Dynatrace/dynatrace-operator/pkg/oci/registry"
-	"github.com/Dynatrace/dynatrace-operator/pkg/version"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/status"
+	dtclient "github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/oci/registry"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/version"
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/pkg/errors"
 )

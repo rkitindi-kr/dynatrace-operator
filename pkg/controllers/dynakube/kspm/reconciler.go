@@ -3,10 +3,10 @@ package kspm
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/kspm/daemonset"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/kspm/token"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/kspm/daemonset"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/kspm/token"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

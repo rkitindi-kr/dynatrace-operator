@@ -1,8 +1,8 @@
 package daemonset
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api"
-	maputils "github.com/Dynatrace/dynatrace-operator/pkg/util/map"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api"
+	maputils "github.com/rkitindi-kr/dynatrace-operator/pkg/util/map"
 )
 
 const annotationTenantTokenHash = api.InternalFlagPrefix + "tenant-token-hash"

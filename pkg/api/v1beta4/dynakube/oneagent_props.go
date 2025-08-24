@@ -1,7 +1,7 @@
 package dynakube
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube/oneagent"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube/oneagent"
 )
 
 func (dk *DynaKube) OneAgent() *oneagent.OneAgent {

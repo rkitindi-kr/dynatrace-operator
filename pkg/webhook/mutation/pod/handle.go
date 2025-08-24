@@ -3,11 +3,11 @@ package pod
 import (
 	"fmt"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/consts"
-	"github.com/Dynatrace/dynatrace-operator/pkg/injection/namespace/bootstrapperconfig"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/container"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/secret"
-	dtwebhook "github.com/Dynatrace/dynatrace-operator/pkg/webhook/mutation/pod/mutator"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/consts"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/injection/namespace/bootstrapperconfig"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/container"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/secret"
+	dtwebhook "github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/mutation/pod/mutator"
 	corev1 "k8s.io/api/core/v1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 	"sigs.k8s.io/controller-runtime/pkg/client"

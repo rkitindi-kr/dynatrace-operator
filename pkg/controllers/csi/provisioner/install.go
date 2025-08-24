@@ -6,15 +6,15 @@ import (
 	"errors"
 	"time"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/arch"
-	dtclient "github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
-	"github.com/Dynatrace/dynatrace-operator/pkg/injection/codemodule/installer"
-	"github.com/Dynatrace/dynatrace-operator/pkg/injection/codemodule/installer/image"
-	"github.com/Dynatrace/dynatrace-operator/pkg/injection/codemodule/installer/job"
-	"github.com/Dynatrace/dynatrace-operator/pkg/injection/codemodule/installer/symlink"
-	"github.com/Dynatrace/dynatrace-operator/pkg/injection/codemodule/installer/url"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/csijob"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/arch"
+	dtclient "github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/injection/codemodule/installer"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/injection/codemodule/installer/image"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/injection/codemodule/installer/job"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/injection/codemodule/installer/symlink"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/injection/codemodule/installer/url"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/csijob"
 )
 
 const notReadyRequeueDuration = 30 * time.Second

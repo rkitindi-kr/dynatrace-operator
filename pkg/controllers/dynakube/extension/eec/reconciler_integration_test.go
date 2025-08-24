@@ -6,7 +6,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/integrationtests"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/integrationtests"
 	"github.com/stretchr/testify/require"
 )
 

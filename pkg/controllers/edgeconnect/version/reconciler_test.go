@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme/fake"
-	"github.com/Dynatrace/dynatrace-operator/pkg/oci/registry"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/timeprovider"
-	registrymock "github.com/Dynatrace/dynatrace-operator/test/mocks/pkg/oci/registry"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme/fake"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/oci/registry"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/timeprovider"
+	registrymock "github.com/rkitindi-kr/dynatrace-operator/test/mocks/pkg/oci/registry"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

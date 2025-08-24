@@ -20,8 +20,8 @@ import (
 	"context"
 	"os"
 
-	csivolumes "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi/driver/volumes"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi/metadata"
+	csivolumes "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi/driver/volumes"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi/metadata"
 	"github.com/container-storage-interface/spec/lib/go/csi"
 	"github.com/spf13/afero"
 	"google.golang.org/grpc/codes"

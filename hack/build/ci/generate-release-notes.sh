@@ -24,22 +24,22 @@ Release Notes can be found in our [official Documentation](https://docs.dynatrac
 kubernetes_manifests="kubectl create namespace dynatrace
 
 # Operator without CSI driver
-kubectl apply -f https://github.com/Dynatrace/dynatrace-operator/releases/download/${tag}/kubernetes.yaml"
+kubectl apply -f https://github.com/rkitindi-kr/dynatrace-operator/releases/download/${tag}/kubernetes.yaml"
 
 openshift_manifests="oc create namespace dynatrace
 
 # Operator without CSI driver
-oc apply -f https://github.com/Dynatrace/dynatrace-operator/releases/download/${tag}/openshift.yaml"
+oc apply -f https://github.com/rkitindi-kr/dynatrace-operator/releases/download/${tag}/openshift.yaml"
 
 kubernetes_manifests="${kubernetes_manifests}
 
 # Operator with CSI driver
-kubectl apply -f https://github.com/Dynatrace/dynatrace-operator/releases/download/${tag}/kubernetes-csi.yaml"
+kubectl apply -f https://github.com/rkitindi-kr/dynatrace-operator/releases/download/${tag}/kubernetes-csi.yaml"
 
 openshift_manifests="${openshift_manifests}
 
 # Operator with CSI driver
-oc apply -f https://github.com/Dynatrace/dynatrace-operator/releases/download/${tag}/openshift-csi.yaml"
+oc apply -f https://github.com/rkitindi-kr/dynatrace-operator/releases/download/${tag}/openshift-csi.yaml"
 
 if [ "${pre_release}" = false ] ; then
   footer="${release_footer}"
@@ -57,7 +57,7 @@ fi
 
 default_notes="### Installation
 
-For information on how to install the [latest dynatrace-operator](https://github.com/Dynatrace/dynatrace-operator/releases/latest) please visit our [official Documentation](https://docs.dynatrace.com/docs/setup-and-configuration/setup-on-k8s/installation).
+For information on how to install the [latest dynatrace-operator](https://github.com/rkitindi-kr/dynatrace-operator/releases/latest) please visit our [official Documentation](https://docs.dynatrace.com/docs/setup-and-configuration/setup-on-k8s/installation).
 
 
 #### Helm (recommended)

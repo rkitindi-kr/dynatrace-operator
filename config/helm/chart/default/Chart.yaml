@@ -29,4 +29,4 @@ maintainers:
 - name: luhi-DT
   email: lukas.hinterreiter@dynatrace.com
 sources:
-- https://github.com/Dynatrace/dynatrace-operator
+- https://github.com/rkitindi-kr/dynatrace-operator

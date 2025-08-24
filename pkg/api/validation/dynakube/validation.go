@@ -4,13 +4,13 @@ import (
 	"context"
 	"errors"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	v1beta1 "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta1/dynakube" //nolint:staticcheck
-	v1beta2 "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta2/dynakube" //nolint:staticcheck
-	v1beta3 "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube" //nolint:staticcheck
-	v1beta4 "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/installconfig"
-	"github.com/Dynatrace/dynatrace-operator/pkg/webhook/validation"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	v1beta1 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta1/dynakube" //nolint:staticcheck
+	v1beta2 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta2/dynakube" //nolint:staticcheck
+	v1beta3 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube" //nolint:staticcheck
+	v1beta4 "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/installconfig"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/validation"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/rest"
 	"sigs.k8s.io/controller-runtime/pkg/client"

@@ -3,8 +3,8 @@ package zip
 import (
 	"strings"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/injection/codemodule/installer/common"
-	"github.com/Dynatrace/dynatrace-operator/pkg/logd"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/injection/codemodule/installer/common"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
 )
 
 var (

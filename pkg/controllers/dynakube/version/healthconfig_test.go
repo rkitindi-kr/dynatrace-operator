@@ -3,7 +3,7 @@ package version
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/status"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/status"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

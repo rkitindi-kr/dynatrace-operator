@@ -3,7 +3,7 @@ package zip
 import (
 	"os"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi/metadata"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi/metadata"
 	"github.com/spf13/afero"
 )
 

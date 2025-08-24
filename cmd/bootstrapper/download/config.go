@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"path/filepath"
 
-	dtclient "github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
+	dtclient "github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
 	"github.com/spf13/afero"
 )
 

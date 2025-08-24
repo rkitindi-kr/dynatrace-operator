@@ -1,7 +1,7 @@
 package builder
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/scheme"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/scheme"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"

@@ -3,10 +3,10 @@ package livenessprobe
 import (
 	"time"
 
-	dtcsi "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi"
-	"github.com/Dynatrace/dynatrace-operator/pkg/csi/livenessprobe"
-	"github.com/Dynatrace/dynatrace-operator/pkg/logd"
-	"github.com/Dynatrace/dynatrace-operator/pkg/version"
+	dtcsi "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/csi/livenessprobe"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/version"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	ctrl "sigs.k8s.io/controller-runtime"

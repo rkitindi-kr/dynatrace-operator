@@ -3,7 +3,7 @@ package daemonset
 import (
 	"fmt"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
 )
 
 func getInitArgs(dk dynakube.DynaKube) []string {

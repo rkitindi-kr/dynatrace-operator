@@ -250,7 +250,7 @@ The following plugin is required to deal with environment files: [EnvFile](https
             </ENTRIES>
         </EXTENSION>
         <kind value="DIRECTORY" />
-        <package value="github.com/Dynatrace/dynatrace-operator" />
+        <package value="github.com/rkitindi-kr/dynatrace-operator" />
         <directory value="$PROJECT_DIR$/cmd" />
         <filePath value="$PROJECT_DIR$" />
         <method v="2" />
@@ -278,7 +278,7 @@ The following plugin is required to deal with environment files: [EnvFile](https
             </ENTRIES>
         </EXTENSION>
         <kind value="DIRECTORY" />
-        <package value="github.com/Dynatrace/dynatrace-operator" />
+        <package value="github.com/rkitindi-kr/dynatrace-operator" />
         <directory value="$PROJECT_DIR$/cmd" />
         <filePath value="$PROJECT_DIR$" />
         <method v="2" />
@@ -329,7 +329,7 @@ Add the following to your `launch.json`:
             "type": "go",
             "request": "attach",
             "mode": "remote",
-            "remotePath": "github.com/Dynatrace/dynatrace-operator",
+            "remotePath": "github.com/rkitindi-kr/dynatrace-operator",
             "port": 40000,
             "host": "127.0.0.1",
             "apiVersion": 2
@@ -339,7 +339,7 @@ Add the following to your `launch.json`:
             "type": "go",
             "request": "attach",
             "mode": "remote",
-            "remotePath": "github.com/Dynatrace/dynatrace-operator",
+            "remotePath": "github.com/rkitindi-kr/dynatrace-operator",
             "port": 40001,
             "host": "127.0.0.1",
             "apiVersion": 2

@@ -21,8 +21,8 @@ Make sure all the following are true when creating a pull-request:
 - The PR has a link to a Jira ticket that requested the change. (If it exists)
 - Unit tests have been updated/added.
 - Relevant documentation has been updated/added.
-  - [ARCHITECTURE.md](https://github.com/Dynatrace/dynatrace-operator/blob/main/ARCHITECTURE.md)
-  - [Other docs](https://github.com/Dynatrace/dynatrace-operator/blob/main/doc)
+  - [ARCHITECTURE.md](https://github.com/rkitindi-kr/dynatrace-operator/blob/main/ARCHITECTURE.md)
+  - [Other docs](https://github.com/rkitindi-kr/dynatrace-operator/blob/main/doc)
 
 ### Bug fixes
 
@@ -151,7 +151,7 @@ filename: "{{.MockName}}.go"
 outpkg: mocks
 dir: "test/mocks{{.InterfaceDirRelative}}"
 packages:
-  github.com/Dynatrace/dynatrace-operator/pkg/util/builder:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/util/builder:
     config:
       recursive: true
      # all: true // or use all if mocks for all interfaces in a package/dir should be created
@@ -196,9 +196,9 @@ To move our existing codebase to mockery you have to look out for these pitfalls
   > ❗ In the case of using multiple mock packages in the same test file, the standard package alias naming is `{struct}mock`, e.g. `clientmock`.
   >
   > ```go
-  > clientmock "github.com/Dynatrace/dynatrace-operator/test/mocks/pkg/clients/dynatrace"
-  > installermock "github.com/Dynatrace/dynatrace-operator/test/mocks/pkg/injection/codemodule/installer"
-  > reconcilermock "github.com/Dynatrace/dynatrace-operator/test/mocks/sigs.k8s.io/controller-runtime/pkg/reconcile"
+  > clientmock "github.com/rkitindi-kr/dynatrace-operator/test/mocks/pkg/clients/dynatrace"
+  > installermock "github.com/rkitindi-kr/dynatrace-operator/test/mocks/pkg/injection/codemodule/installer"
+  > reconcilermock "github.com/rkitindi-kr/dynatrace-operator/test/mocks/sigs.k8s.io/controller-runtime/pkg/reconcile"
   > ```
 
 ## Integration tests

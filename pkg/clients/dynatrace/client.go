@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
 	"github.com/pkg/errors"
 	"golang.org/x/net/http/httpproxy"
 )

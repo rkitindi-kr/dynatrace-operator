@@ -3,7 +3,7 @@ package driver
 import (
 	"net"
 
-	mocks "github.com/Dynatrace/dynatrace-operator/test/mocks/github.com/container-storage-interface/spec/lib/go/csi"
+	mocks "github.com/rkitindi-kr/dynatrace-operator/test/mocks/github.com/container-storage-interface/spec/lib/go/csi"
 	"github.com/container-storage-interface/spec/lib/go/csi"
 )
 

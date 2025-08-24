@@ -1,6 +1,6 @@
 package metadata
 
-import "github.com/Dynatrace/dynatrace-operator/pkg/logd"
+import "github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
 
 const (
 	AnnotationPrefix = "metadata-enrichment"

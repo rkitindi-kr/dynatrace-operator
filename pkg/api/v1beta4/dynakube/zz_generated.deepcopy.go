@@ -19,10 +19,10 @@ limitations under the License.
 package dynakube
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/shared/value"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube/kspm"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube/logmonitoring"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube/telemetryingest"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/shared/value"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube/kspm"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube/logmonitoring"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube/telemetryingest"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"

@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/arch"
-	"github.com/Dynatrace/dynatrace-operator/pkg/clients/utils"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/arch"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/clients/utils"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

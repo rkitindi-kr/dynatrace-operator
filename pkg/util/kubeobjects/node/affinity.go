@@ -1,7 +1,7 @@
 package node
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/arch"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/arch"
 	corev1 "k8s.io/api/core/v1"
 )
 

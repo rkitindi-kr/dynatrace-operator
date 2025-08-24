@@ -19,7 +19,7 @@ limitations under the License.
 package activegate
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/shared/value"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/shared/value"
 	"k8s.io/api/core/v1"
 )
 

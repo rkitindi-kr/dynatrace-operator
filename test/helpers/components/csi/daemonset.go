@@ -5,9 +5,9 @@ package csi
 import (
 	"context"
 
-	dtcsi "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/kubeobjects/daemonset"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/kubeobjects/pod"
+	dtcsi "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/kubeobjects/daemonset"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/kubeobjects/pod"
 	corev1 "k8s.io/api/core/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/e2e-framework/klient/k8s/resources"

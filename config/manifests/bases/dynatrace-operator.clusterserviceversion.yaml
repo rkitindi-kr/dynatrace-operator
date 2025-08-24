@@ -7,7 +7,7 @@ metadata:
     categories: Monitoring,Logging & Tracing
     containerImage: registry.connect.redhat.com/dynatrace/dynatrace-operator
     operatorframework.io/suggested-namespace: dynatrace
-    repository: https://github.com/Dynatrace/dynatrace-operator
+    repository: https://github.com/rkitindi-kr/dynatrace-operator
     support: Dynatrace
   labels:
     operatorframework.io/arch.amd64: supported
@@ -1647,7 +1647,7 @@ spec:
   - observability
   links:
   - name: Dynatrace Operator
-    url: https://github.com/Dynatrace/dynatrace-operator
+    url: https://github.com/rkitindi-kr/dynatrace-operator
   - name: OpenShift Monitoring Info
     url: https://www.dynatrace.com/technologies/openshift-monitoring
   maintainers:

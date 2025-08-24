@@ -1,7 +1,7 @@
 package dynakube
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube/logmonitoring"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube/logmonitoring"
 )
 
 func (dk *DynaKube) LogMonitoring() *logmonitoring.LogMonitoring {

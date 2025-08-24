@@ -3,8 +3,8 @@ package version
 import (
 	"time"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/status"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/dtversion"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/status"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/dtversion"
 	containerv1 "github.com/google/go-containerregistry/pkg/v1"
 	"golang.org/x/mod/semver"
 )

@@ -5,14 +5,14 @@ package publicregistry
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/test/features/cloudnative"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/components/activegate"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/components/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/kubeobjects/namespace"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/registry"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/sample"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/tenant"
+	"github.com/rkitindi-kr/dynatrace-operator/test/features/cloudnative"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/components/activegate"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/components/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/kubeobjects/namespace"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/registry"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/sample"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/tenant"
 	"sigs.k8s.io/e2e-framework/pkg/features"
 )
 

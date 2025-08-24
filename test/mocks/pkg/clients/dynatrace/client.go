@@ -8,8 +8,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
-	"github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
 	mock "github.com/stretchr/testify/mock"
 )
 

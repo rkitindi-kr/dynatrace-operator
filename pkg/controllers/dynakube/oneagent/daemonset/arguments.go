@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/activegate/capability"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/connectioninfo"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/deploymentmetadata"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/prioritymap"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/activegate/capability"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/connectioninfo"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/deploymentmetadata"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/prioritymap"
 )
 
 const argumentPrefix = "--"

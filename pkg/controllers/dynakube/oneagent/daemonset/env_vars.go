@@ -1,13 +1,13 @@
 package daemonset
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/status"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/connectioninfo"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/deploymentmetadata"
-	logmonitoring "github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/logmonitoring/daemonset"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/prioritymap"
-	"github.com/Dynatrace/dynatrace-operator/pkg/version"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/status"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/connectioninfo"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/deploymentmetadata"
+	logmonitoring "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/logmonitoring/daemonset"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/prioritymap"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/version"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/utils/ptr"

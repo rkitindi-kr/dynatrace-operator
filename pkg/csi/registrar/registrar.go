@@ -6,8 +6,8 @@ import (
 	"os"
 	"runtime"
 
-	dtcsi "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi"
-	"github.com/Dynatrace/dynatrace-operator/pkg/logd"
+	dtcsi "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
 	"github.com/kubernetes-csi/csi-lib-utils/connection"
 	"github.com/kubernetes-csi/csi-lib-utils/rpc"
 	"github.com/pkg/errors"

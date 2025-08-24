@@ -5,7 +5,7 @@ plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: dynatrace-operator
-repo: github.com/Dynatrace/dynatrace-operator
+repo: github.com/rkitindi-kr/dynatrace-operator
 resources:
 - api:
     crdVersion: v1
@@ -13,7 +13,7 @@ resources:
   group: dynatrace
   domain: com
   kind: DynaKube
-  path: github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta1
+  path: github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta1
   version: v1beta1
   controller: true
   webhooks:
@@ -25,7 +25,7 @@ resources:
   group: dynatrace
   domain: com
   kind: DynaKube
-  path: github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta2
+  path: github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta2
   version: v1beta2
   controller: true
   webhooks:

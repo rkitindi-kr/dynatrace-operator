@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/activegate/consts"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/kubeobjects/statefulset"
-	"github.com/Dynatrace/dynatrace-operator/test/helpers/logs"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/activegate/consts"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/kubeobjects/statefulset"
+	"github.com/rkitindi-kr/dynatrace-operator/test/helpers/logs"
 	"sigs.k8s.io/e2e-framework/pkg/envconf"
 	"sigs.k8s.io/e2e-framework/pkg/features"
 )

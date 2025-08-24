@@ -5,19 +5,19 @@ package helpers
 import (
 	"context"
 
-	latest "github.com/Dynatrace/dynatrace-operator/pkg/api/latest" //nolint:revive
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha1"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha1/edgeconnect"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta1"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta1/dynakube" //nolint:staticcheck
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta2"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta2/dynakube" //nolint:staticcheck
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4"
+	latest "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest" //nolint:revive
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha1"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha1/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta1"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta1/dynakube" //nolint:staticcheck
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta2"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta2/dynakube" //nolint:staticcheck
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4"
 	"sigs.k8s.io/e2e-framework/pkg/envconf"
 )
 

@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/csi/csitest/driver"
-	mocks "github.com/Dynatrace/dynatrace-operator/test/mocks/github.com/container-storage-interface/spec/lib/go/csi"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/csi/csitest/driver"
+	mocks "github.com/rkitindi-kr/dynatrace-operator/test/mocks/github.com/container-storage-interface/spec/lib/go/csi"
 	"github.com/container-storage-interface/spec/lib/go/csi"
 	"github.com/kubernetes-csi/csi-lib-utils/connection"
 	"github.com/stretchr/testify/assert"

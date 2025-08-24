@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/clients/utils"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/clients/utils"
 	"github.com/pkg/errors"
 )
 

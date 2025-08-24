@@ -3,9 +3,9 @@ package secret
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/edgeconnect/config"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/edgeconnect/consts"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/edgeconnect/config"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/edgeconnect/consts"
 	"gopkg.in/yaml.v3"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )

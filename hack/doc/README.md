@@ -28,8 +28,8 @@ python3 <operator-repo>/hack/doc/role-permissions2md.py <operator-repo>/config/d
 make doc/permissions
 
 # manifests from web
-python3 <operator-repo>/hack/doc/role-permissions2md.py https://github.com/Dynatrace/dynatrace-operator/releases/download/v0.12.0/openshift.yaml
-python3 <operator-repo>/hack/doc/role-permissions2md.py https://github.com/Dynatrace/dynatrace-operator/releases/download/v0.12.0/openshift-csi.yaml
+python3 <operator-repo>/hack/doc/role-permissions2md.py https://github.com/rkitindi-kr/dynatrace-operator/releases/download/v0.12.0/openshift.yaml
+python3 <operator-repo>/hack/doc/role-permissions2md.py https://github.com/rkitindi-kr/dynatrace-operator/releases/download/v0.12.0/openshift-csi.yaml
 ```
 
 ## custom_resource_params_to_md.py

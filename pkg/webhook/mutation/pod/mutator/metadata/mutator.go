@@ -3,12 +3,12 @@ package metadata
 import (
 	"maps"
 
-	podattr "github.com/Dynatrace/dynatrace-bootstrapper/cmd/configure/attributes/pod"
-	"github.com/Dynatrace/dynatrace-operator/cmd/bootstrapper"
-	maputils "github.com/Dynatrace/dynatrace-operator/pkg/util/map"
-	"github.com/Dynatrace/dynatrace-operator/pkg/webhook/mutation/pod/arg"
-	dtwebhook "github.com/Dynatrace/dynatrace-operator/pkg/webhook/mutation/pod/mutator"
-	"github.com/Dynatrace/dynatrace-operator/pkg/webhook/mutation/pod/mutator/oneagent"
+	podattr "github.com/rkitindi-kr/dynatrace-bootstrapper/cmd/configure/attributes/pod"
+	"github.com/rkitindi-kr/dynatrace-operator/cmd/bootstrapper"
+	maputils "github.com/rkitindi-kr/dynatrace-operator/pkg/util/map"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/mutation/pod/arg"
+	dtwebhook "github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/mutation/pod/mutator"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/mutation/pod/mutator/oneagent"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"

@@ -17,20 +17,20 @@ limitations under the License.
 package scheme
 
 import (
-	latest "github.com/Dynatrace/dynatrace-operator/pkg/api/latest" //nolint:revive
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha1"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha1/edgeconnect"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta1"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta1/dynakube" //nolint:staticcheck
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta2"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta2/dynakube" //nolint:staticcheck
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta3/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4"
-	_ "github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube"
+	latest "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest" //nolint:revive
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha1"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha1/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1alpha2/edgeconnect"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta1"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta1/dynakube" //nolint:staticcheck
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta2"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta2/dynakube" //nolint:staticcheck
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta3/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4"
+	_ "github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube"
 	istiov1beta1 "istio.io/client-go/pkg/apis/networking/v1beta1"
 	corev1 "k8s.io/api/core/v1"
 	apiv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"

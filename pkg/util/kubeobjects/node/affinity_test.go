@@ -3,7 +3,7 @@ package node
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/arch"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/arch"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	corev1 "k8s.io/api/core/v1"

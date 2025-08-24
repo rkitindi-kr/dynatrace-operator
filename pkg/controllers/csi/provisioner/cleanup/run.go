@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	dtcsi "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi/metadata"
+	dtcsi "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi/metadata"
 	"github.com/spf13/afero"
 	"k8s.io/mount-utils"
 	"sigs.k8s.io/controller-runtime/pkg/client"

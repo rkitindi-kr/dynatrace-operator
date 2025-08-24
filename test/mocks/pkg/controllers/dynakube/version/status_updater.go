@@ -7,8 +7,8 @@ package mocks
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/status"
-	"github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/status"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace"
 	mock "github.com/stretchr/testify/mock"
 )
 

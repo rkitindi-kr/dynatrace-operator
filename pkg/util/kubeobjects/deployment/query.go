@@ -1,10 +1,10 @@
 package deployment
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/logd"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/hasher"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/internal/query"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/labels"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/logd"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/hasher"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/internal/query"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/labels"
 	appsv1 "k8s.io/api/apps/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )

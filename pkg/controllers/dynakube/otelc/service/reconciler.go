@@ -3,11 +3,11 @@ package service
 import (
 	"context"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/otelcgen"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/conditions"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/labels"
-	"github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/service"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/otelcgen"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/conditions"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/labels"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/service"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/util/intstr"

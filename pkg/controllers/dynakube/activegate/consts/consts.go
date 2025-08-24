@@ -1,8 +1,8 @@
 package consts
 
 import (
-	"github.com/Dynatrace/dynatrace-operator/pkg/api"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/connectioninfo"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/connectioninfo"
 )
 
 const (

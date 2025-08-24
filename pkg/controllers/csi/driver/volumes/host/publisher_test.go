@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	csivolumes "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi/driver/volumes"
-	"github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi/metadata"
+	csivolumes "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi/driver/volumes"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi/metadata"
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

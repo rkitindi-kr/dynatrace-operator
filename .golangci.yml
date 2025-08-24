@@ -71,7 +71,7 @@ linters:
             - $all
           allow:
             - $gostd
-            - github.com/Dynatrace
+            - github.com/rkitindi-kr
             - github.com/container-storage-interface
             - github.com/containers
             - github.com/klauspost

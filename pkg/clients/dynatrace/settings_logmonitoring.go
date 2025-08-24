@@ -7,8 +7,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
-	"github.com/Dynatrace/dynatrace-operator/pkg/clients/utils"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/clients/utils"
 	"github.com/pkg/errors"
 )
 

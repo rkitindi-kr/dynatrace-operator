@@ -12,43 +12,43 @@ require-template-schema-exists: true
 template: testify
 template-schema: '{{.Template}}.schema.json'
 packages:
-  github.com/Dynatrace/dynatrace-operator/cmd/supportarchive/remotecommand:
+  github.com/rkitindi-kr/dynatrace-operator/cmd/supportarchive/remotecommand:
     interfaces:
       Executor:
-  github.com/Dynatrace/dynatrace-operator/pkg/clients/dynatrace:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/clients/dynatrace:
     interfaces:
       Client:
-  github.com/Dynatrace/dynatrace-operator/pkg/clients/edgeconnect:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/clients/edgeconnect:
     interfaces:
       Client:
-  github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/activegate:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/activegate:
     interfaces:
       CapabilityReconciler:
-  github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/version:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/version:
     interfaces:
       StatusUpdater:
       Reconciler:
-  github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/dynatraceclient:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/dynatraceclient:
     interfaces:
       Builder:
-  github.com/Dynatrace/dynatrace-operator/pkg/controllers:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/controllers:
     interfaces:
       Reconciler:
-  github.com/Dynatrace/dynatrace-operator/pkg/controllers/dynakube/istio:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/dynakube/istio:
     interfaces:
       Reconciler:
-  github.com/Dynatrace/dynatrace-operator/pkg/injection/codemodule/installer:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/injection/codemodule/installer:
     interfaces:
       Installer:
-  github.com/Dynatrace/dynatrace-operator/pkg/oci/registry:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/oci/registry:
     interfaces:
       ImageGetter:
-  github.com/Dynatrace/dynatrace-operator/pkg/util/builder:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/util/builder:
     config:
       recursive: true
     interfaces:
       Modifier:
-  github.com/Dynatrace/dynatrace-operator/pkg/webhook/mutation/pod/mutator:
+  github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/mutation/pod/mutator:
     interfaces:
       Mutator:
   sigs.k8s.io/controller-runtime/pkg/manager:

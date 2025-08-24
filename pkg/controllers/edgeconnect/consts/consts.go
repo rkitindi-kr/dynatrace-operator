@@ -1,6 +1,6 @@
 package consts
 
-import "github.com/Dynatrace/dynatrace-operator/pkg/api"
+import "github.com/rkitindi-kr/dynatrace-operator/pkg/api"
 
 const (
 	EdgeConnectAnnotationSecretHash  = api.InternalFlagPrefix + "secret-hash"

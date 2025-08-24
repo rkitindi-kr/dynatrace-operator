@@ -3,7 +3,7 @@ package volumes
 import (
 	"testing"
 
-	"github.com/Dynatrace/dynatrace-operator/pkg/consts"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/consts"
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"

@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # For more information why the individual permissions are required see
-# https://github.com/Dynatrace/dynatrace-operator/blob/main/doc/roles/operator-roles.md
+# https://github.com/rkitindi-kr/dynatrace-operator/blob/main/doc/roles/operator-roles.md
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

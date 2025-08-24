@@ -1,16 +1,16 @@
 package dynakube
 
 import (
-	dynakubelatest "github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	activegatelatest "github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/activegate"
-	extensionslatest "github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/extensions"
-	kspmlatest "github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/kspm"
-	logmonitoringlatest "github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
-	oneagentlatest "github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
-	telemetryingestlatest "github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube/telemetryingest"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube/kspm"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube/logmonitoring"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/v1beta4/dynakube/oneagent"
+	dynakubelatest "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	activegatelatest "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/activegate"
+	extensionslatest "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/extensions"
+	kspmlatest "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/kspm"
+	logmonitoringlatest "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/logmonitoring"
+	oneagentlatest "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/oneagent"
+	telemetryingestlatest "github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube/telemetryingest"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube/kspm"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube/logmonitoring"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/v1beta4/dynakube/oneagent"
 	"sigs.k8s.io/controller-runtime/pkg/conversion"
 )
 
