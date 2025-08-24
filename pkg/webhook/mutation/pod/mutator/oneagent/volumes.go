@@ -44,6 +44,7 @@ func addInitBinMount(initContainer *corev1.Container, readonly bool) {
 	)
 }
 
+/*
 func addEmptyDirBinVolume(pod *corev1.Pod) {
 	if volumeutils.IsIn(pod.Spec.Volumes, BinVolumeName) {
 		return
@@ -73,6 +74,42 @@ func addEmptyDirBinVolume(pod *corev1.Pod) {
 		},
 	)
 }
+
+*/
+
+// Above funtion is replaced by this:
+
+func addPVCBinVolume(pod *corev1.Pod, defaultSize, defaultClass string) {
+    if volumeutils.IsIn(pod.Spec.Volumes, BinVolumeName) {
+        return
+    }
+
+    // build deterministic PVC name (namespace + pod + volume)
+    pvcName := fmt.Sprintf("%s-%s", BinVolumeName, pod.Name)
+
+    volumeSource := corev1.VolumeSource{
+        PersistentVolumeClaim: &corev1.PersistentVolumeClaimVolumeSource{
+            ClaimName: pvcName,
+        },
+    }
+
+    pod.Spec.Volumes = append(pod.Spec.Volumes,
+        corev1.Volume{
+            Name:         BinVolumeName,
+            VolumeSource: volumeSource,
+        },
+    )
+
+    // annotate pod with PVC metadata so controller can pick it up
+    if pod.Annotations == nil {
+        pod.Annotations = map[string]string{}
+    }
+    pod.Annotations["pvc-webhook/storage-size"] = "2Gi"
+    pod.Annotations["pvc-webhook/storage-class"] = "robin-repl-3"
+    pod.Annotations["pvc-webhook/claim"] = "oneagent-bin-pvc"
+}
+
+// The end of new function
 
 func addCSIBinVolume(pod *corev1.Pod, dkName string, maxTimeout string) {
 	if volumeutils.IsIn(pod.Spec.Volumes, BinVolumeName) {

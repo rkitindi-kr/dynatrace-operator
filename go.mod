@@ -1,4 +1,4 @@
-module github.com/Dynatrace/dynatrace-operator
+module github.com/rkitindi-kr/dynatrace-operator
 
 go 1.24.2
 
