@@ -168,6 +168,7 @@ func addEphemeralBinVolume(pod *corev1.Pod) {
     // Hardcoded storage request
     storageReq := resource.MustParse("2Gi")
 
+    // Create PVC spec with standard ResourceRequirements
     pvcSpec := corev1.PersistentVolumeClaimSpec{
         AccessModes: []corev1.PersistentVolumeAccessMode{
             corev1.ReadWriteOnce, // fixed mode
@@ -196,7 +197,6 @@ func addEphemeralBinVolume(pod *corev1.Pod) {
         },
     )
 }
-
 
 func addCSIBinVolume(pod *corev1.Pod, dkName string, maxTimeout string) {
 	if volumeutils.IsIn(pod.Spec.Volumes, BinVolumeName) {

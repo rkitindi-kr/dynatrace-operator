@@ -10,7 +10,7 @@ require (
 	github.com/google/go-containerregistry v0.20.6
 	github.com/google/uuid v1.6.0
 	github.com/klauspost/compress v1.18.0
-	github.com/kubernetes-csi/csi-lib-utils v0.22.0
+	github.com/kubernetes-csi/csi-lib-utils v0.14.1
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.23.0
@@ -32,13 +32,13 @@ require (
 	google.golang.org/grpc v1.75.0
 	gopkg.in/yaml.v3 v3.0.1
 	istio.io/api v1.27.0
-	istio.io/client-go v1.27.0
-	k8s.io/api v0.33.4
-	k8s.io/apiextensions-apiserver v0.33.4
+	istio.io/client-go v1.19.0-beta.0
+	k8s.io/api v0.33.0
+	k8s.io/apiextensions-apiserver v0.33.0
 	k8s.io/apimachinery v0.33.4
-	k8s.io/client-go v0.33.4
+	k8s.io/client-go v0.33.0
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.33.4
+	k8s.io/kubelet v0.27.10
 	k8s.io/mount-utils v0.33.4
 	k8s.io/utils v0.0.0-20241210054802-24370beab758
 	sigs.k8s.io/controller-runtime v0.21.0
@@ -137,7 +137,6 @@ require (
 	go.opentelemetry.io/collector/receiver/receivertest v0.131.0 // indirect
 	go.opentelemetry.io/collector/receiver/xreceiver v0.131.0 // indirect
 	go.opentelemetry.io/contrib/bridges/otelzap v0.12.0 // indirect
-	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.58.0 // indirect
 	go.opentelemetry.io/contrib/otelconf v0.17.0 // indirect
 	go.opentelemetry.io/contrib/propagators/b3 v1.37.0 // indirect
 	go.opentelemetry.io/otel v1.37.0 // indirect
@@ -174,7 +173,7 @@ require (
 	google.golang.org/protobuf v1.36.6 // indirect
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
-	k8s.io/component-base v0.33.4 // indirect
+	k8s.io/component-base v0.33.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20250318190949-c8a335a9a2ff // indirect
 	sigs.k8s.io/json v0.0.0-20241014173422-cfa47c3a1cc8 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
