@@ -38,6 +38,7 @@ func addVolumeMounts(container *corev1.Container, installPath string) {
 	)
 }
 
+
 func addInitBinMount(initContainer *corev1.Container, readonly bool) {
 	initContainer.VolumeMounts = append(initContainer.VolumeMounts,
 		corev1.VolumeMount{
