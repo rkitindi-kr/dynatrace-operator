@@ -1,15 +1,15 @@
 package oneagent
 
 import (
-	"github.com/Dynatrace/dynatrace-bootstrapper/cmd"
-	"github.com/Dynatrace/dynatrace-bootstrapper/cmd/configure"
-	"github.com/Dynatrace/dynatrace-bootstrapper/cmd/move"
-	"github.com/Dynatrace/dynatrace-operator/cmd/bootstrapper"
-	"github.com/Dynatrace/dynatrace-operator/pkg/api/latest/dynakube"
-	"github.com/Dynatrace/dynatrace-operator/pkg/consts"
-	maputils "github.com/Dynatrace/dynatrace-operator/pkg/util/map"
-	"github.com/Dynatrace/dynatrace-operator/pkg/webhook/mutation/pod/arg"
-	dtwebhook "github.com/Dynatrace/dynatrace-operator/pkg/webhook/mutation/pod/mutator"
+	"github.com/rkitindi-kr/dynatrace-bootstrapper/cmd"
+	"github.com/rkitindi-kr/dynatrace-bootstrapper/cmd/configure"
+	"github.com/rkitindi-kr/dynatrace-bootstrapper/cmd/move"
+	"github.com/rkitindi-kr/dynatrace-operator/cmd/bootstrapper"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/api/latest/dynakube"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/consts"
+	maputils "github.com/rkitindi-kr/dynatrace-operator/pkg/util/map"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/mutation/pod/arg"
+	dtwebhook "github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/mutation/pod/mutator"
 	corev1 "k8s.io/api/core/v1"
 )
 

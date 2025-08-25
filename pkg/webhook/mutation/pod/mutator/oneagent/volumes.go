@@ -1,13 +1,13 @@
 package oneagent
 
 import (
-	"github.com/Dynatrace/dynatrace-bootstrapper/pkg/configure/oneagent/preload"
-	"github.com/Dynatrace/dynatrace-operator/pkg/consts"
-	dtcsi "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi"
-	csivolumes "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi/driver/volumes"
-	appvolumes "github.com/Dynatrace/dynatrace-operator/pkg/controllers/csi/driver/volumes/app"
-	volumeutils "github.com/Dynatrace/dynatrace-operator/pkg/util/kubeobjects/volumes"
-	"github.com/Dynatrace/dynatrace-operator/pkg/webhook/mutation/pod/volumes"
+	"github.com/rkitindi-kr/dynatrace-bootstrapper/pkg/configure/oneagent/preload"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/consts"
+	dtcsi "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi"
+	csivolumes "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi/driver/volumes"
+	appvolumes "github.com/rkitindi-kr/dynatrace-operator/pkg/controllers/csi/driver/volumes/app"
+	volumeutils "github.com/rkitindi-kr/dynatrace-operator/pkg/util/kubeobjects/volumes"
+	"github.com/rkitindi-kr/dynatrace-operator/pkg/webhook/mutation/pod/volumes"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	"k8s.io/utils/ptr"
