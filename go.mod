@@ -98,6 +98,7 @@ require (
 	github.com/prometheus/common v0.65.0 // indirect
 	github.com/prometheus/otlptranslator v0.0.0-20250717125610-8549f4ab4f8f // indirect
 	github.com/prometheus/procfs v0.17.0 // indirect
+	github.com/rkitindi-kr/dynatrace-bootstrapper v0.0.0-20250825023318-83eb0de627af // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/spf13/pflag v1.0.6 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect

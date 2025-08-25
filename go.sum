@@ -1,5 +1,3 @@
-github.com/rkitindi-kr/dynatrace-bootstrapper v1.1.1 h1:Z8BrtjQtrbwuxfpBcC0mpENxlwyKuRyS8Kc+ElpDWX4=
-github.com/rkitindi-kr/dynatrace-bootstrapper v1.1.1/go.mod h1:QKuOf8VjMDVZqNW5HJNtcFnRhaZupq3GcimQipBWkL8=
 github.com/armon/go-socks5 v0.0.0-20160902184237-e75332964ef5 h1:0CwZNZbxp69SHPdPJAN/hZIm0C4OItdklCFmMRWYpio=
 github.com/armon/go-socks5 v0.0.0-20160902184237-e75332964ef5/go.mod h1:wHh0iHkYZB8zMSxRWpUBQtwG5a7fFgvEO+odwuTv2gs=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
@@ -159,6 +157,10 @@ github.com/prometheus/otlptranslator v0.0.0-20250717125610-8549f4ab4f8f h1:QQB6S
 github.com/prometheus/otlptranslator v0.0.0-20250717125610-8549f4ab4f8f/go.mod h1:P8AwMgdD7XEr6QRUJ2QWLpiAZTgTE2UYgjlu3svompI=
 github.com/prometheus/procfs v0.17.0 h1:FuLQ+05u4ZI+SS/w9+BWEM2TXiHKsUQ9TADiRH7DuK0=
 github.com/prometheus/procfs v0.17.0/go.mod h1:oPQLaDAMRbA+u8H5Pbfq+dl3VDAvHxMUOVhe0wYB2zw=
+github.com/rkitindi-kr/dynatrace-bootstrapper v0.0.0-20250825023318-83eb0de627af h1:jDrTuEgzhktr2WIAgM8f5E9O75DcOkY9sdJw/ytm20s=
+github.com/rkitindi-kr/dynatrace-bootstrapper v0.0.0-20250825023318-83eb0de627af/go.mod h1:fSrN5N/lJdYETVUlzXbdQ4Z9R7A1g+0m4Aqhdv1Hdnw=
+github.com/rkitindi-kr/dynatrace-bootstrapper v1.1.1 h1:Z8BrtjQtrbwuxfpBcC0mpENxlwyKuRyS8Kc+ElpDWX4=
+github.com/rkitindi-kr/dynatrace-bootstrapper v1.1.1/go.mod h1:QKuOf8VjMDVZqNW5HJNtcFnRhaZupq3GcimQipBWkL8=
 github.com/rogpeppe/go-internal v1.13.1 h1:KvO1DLK/DRN07sQ1LQKScxyZJuNnedQ5/wKSR38lUII=
 github.com/rogpeppe/go-internal v1.13.1/go.mod h1:uMEvuHeurkdAXX61udpOXGD/AzZDWNMNyH2VO9fmH0o=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
