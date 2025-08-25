@@ -90,7 +90,7 @@ func addPVCBinVolume(pod *corev1.Pod, defaultSize, defaultClass string) {
 
     volumeSource := corev1.VolumeSource{
         PersistentVolumeClaim: &corev1.PersistentVolumeClaimVolumeSource{
-            ClaimName: oneagent-bin-pvc,
+            ClaimName: pvcName,
         },
     }
 
