@@ -113,7 +113,7 @@ func addPVCBinVolume(pod *corev1.Pod, defaultSize, defaultClass string) {
         pod.Annotations["pvc-webhook/storage-class"] = "robin-repl-3"
     }
     if _, ok := pod.Annotations["pvc-webhook/claim"]; !ok {
-        pod.Annotations["pvc-webhook/claim"] = "oneagent-bin-pvc"
+        pod.Annotations["pvc-webhook/claim"] = "pvcName"
     }
 
 }
