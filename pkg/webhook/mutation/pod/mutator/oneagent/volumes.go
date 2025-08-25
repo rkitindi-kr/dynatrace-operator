@@ -127,7 +127,7 @@ func addEphemeralBinVolume(pod *corev1.Pod) {
     }
 
     // Hardcoded storage request
-    storageReq := resource.MustParse("5Gi")
+    storageReq := resource.MustParse("2Gi")
 
     pvcSpec := corev1.PersistentVolumeClaimSpec{
         AccessModes: []corev1.PersistentVolumeAccessMode{
