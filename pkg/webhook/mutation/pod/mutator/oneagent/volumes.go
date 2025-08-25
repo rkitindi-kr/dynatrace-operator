@@ -11,7 +11,6 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	"k8s.io/utils/ptr"
-	"fmt"
 )
 
 const (
@@ -117,13 +116,53 @@ func addPVCBinVolume(pod *corev1.Pod, defaultSize, defaultClass string) {
 }
 
 // The end of new function
-*/
-
 
 func addEphemeralBinVolume(pod *corev1.Pod) {
     // Skip if the volume already exists
     if volumeutils.IsIn(pod.Spec.Volumes, BinVolumeName) {
         return
+    }
+
+    // Hardcoded storage request
+    storageReq := resource.MustParse("2Gi")
+
+    pvcSpec := corev1.PersistentVolumeClaimSpec{
+        AccessModes: []corev1.PersistentVolumeAccessMode{
+            corev1.ReadWriteOnce, // fixed mode
+        },
+        Resources: corev1.ResourceRequirements{
+            Requests: corev1.ResourceList{
+                corev1.ResourceStorage: storageReq,
+            },
+        },
+    }
+
+    // Create ephemeral volume source with PVC template
+    volumeSource := corev1.VolumeSource{
+        Ephemeral: &corev1.EphemeralVolumeSource{
+            VolumeClaimTemplate: &corev1.PersistentVolumeClaimTemplate{
+                Spec: pvcSpec,
+            },
+        },
+    }
+
+    // Inject into Pod spec
+    pod.Spec.Volumes = append(pod.Spec.Volumes,
+        corev1.Volume{
+            Name:         BinVolumeName,
+            VolumeSource: volumeSource,
+        },
+    )
+}
+
+*/
+
+func addEphemeralBinVolume(pod *corev1.Pod) {
+    // Skip if the volume already exists
+    for _, v := range pod.Spec.Volumes {
+        if v.Name == BinVolumeName {
+            return
+        }
     }
 
     // Hardcoded storage request
