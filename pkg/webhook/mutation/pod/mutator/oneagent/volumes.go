@@ -17,6 +17,8 @@ const (
 	BinVolumeName    = "oneagent-bin"
 	ldPreloadPath    = "/etc/ld.so.preload"
 	ldPreloadSubPath = preload.ConfigPath
+        AnnotationOneAgenBinResource = "pvc-webhook/storage-size"   // or your prior key for size; keep existing if different
+	AnnotationStorageClass       = "pvc-webhook/storage-class" // optional
 )
 
 func addVolumeMounts(container *corev1.Container, installPath string) {
@@ -78,43 +80,68 @@ func addEmptyDirBinVolume(pod *corev1.Pod) {
 */
 
 // Above funtion is replaced by this:
+// addEphemeralBinVolume converts the previous emptyDir volume into a Generic Ephemeral Volume
+// backed by a PVC created via VolumeClaimTemplate. Kubernetes will create/bind the PVC before
+// starting containers and delete it when the Pod is deleted (no external controller needed).
+func addEphemeralBinVolume(pod *corev1.Pod) {
+	if pod == nil {
+		return
+	}
 
-func addPVCBinVolume(pod *corev1.Pod, defaultSize, defaultClass string) {
-    if volumeutils.IsIn(pod.Spec.Volumes, BinVolumeName) {
-        return
-    }
+	// --- derive requested size ---
+	sizeStr := "2Gi"
+	if r, ok := pod.Annotations[AnnotationOneAgenBinResource]; ok && r != "" {
+		sizeStr = r
+	}
+	qty, err := resource.ParseQuantity(sizeStr)
+	if err != nil {
+		// fall back safely
+		qty = resource.MustParse("2Gi")
+	}
 
-    // build deterministic PVC name (namespace + pod + volume)
-    pvcName := fmt.Sprintf("%s-%s", BinVolumeName, pod.Name)
+	// --- optional storage class ---
+	var scPtr *string
+	if sc, ok := pod.Annotations[AnnotationStorageClass]; ok && sc != "" {
+		scPtr = &sc
+	}
 
-    volumeSource := corev1.VolumeSource{
-        PersistentVolumeClaim: &corev1.PersistentVolumeClaimVolumeSource{
-            ClaimName: pvcName,
-        },
-    }
+	// --- build the ephemeral volume ---
+	vol := corev1.Volume{
+		Name: BinVolumeName, // keep your existing constant
+		VolumeSource: corev1.VolumeSource{
+			Ephemeral: &corev1.EphemeralVolumeSource{
+				VolumeClaimTemplate: &corev1.PersistentVolumeClaimTemplate{
+					ObjectMeta: metav1.ObjectMeta{
+						// Add labels/annotations if you want them propagated to the PVC
+						Labels: map[string]string{
+							"created-by": "oneagent-mutator",
+							"pod":        pod.Name,
+						},
+					},
+					Spec: corev1.PersistentVolumeClaimSpec{
+						AccessModes: []corev1.PersistentVolumeAccessMode{
+							corev1.ReadWriteOnce, // change if you need RWX
+						},
+						Resources: corev1.VolumeResourceRequirements{
+							Requests: corev1.ResourceList{
+								corev1.ResourceStorage: qty,
+							},
+						},
+						StorageClassName: scPtr, // nil => default storage class
+					},
+				},
+			},
+		},
+	}
 
-    pod.Spec.Volumes = append(pod.Spec.Volumes,
-        corev1.Volume{
-            Name:         BinVolumeName,
-            VolumeSource: volumeSource,
-        },
-    )
-
-    // annotate pod with PVC metadata so controller can pick it up
-    if pod.Annotations == nil {
-        pod.Annotations = map[string]string{}
-    }
-
-        if _, ok := pod.Annotations["pvc-webhook/storage-size"]; !ok {
-        pod.Annotations["pvc-webhook/storage-size"] = "2Gi"
-    }
-    if _, ok := pod.Annotations["pvc-webhook/storage-class"]; !ok {
-        pod.Annotations["pvc-webhook/storage-class"] = "robin-repl-3"
-    }
-    if _, ok := pod.Annotations["pvc-webhook/claim"]; !ok {
-        pod.Annotations["pvc-webhook/claim"] = pvcName
-    }
-
+	// --- replace existing volume with same name, or append if missing ---
+	for i := range pod.Spec.Volumes {
+		if pod.Spec.Volumes[i].Name == BinVolumeName {
+			pod.Spec.Volumes[i] = vol
+			return
+		}
+	}
+	pod.Spec.Volumes = append(pod.Spec.Volumes, vol)
 }
 
 // The end of new function
