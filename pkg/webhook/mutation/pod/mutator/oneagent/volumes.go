@@ -17,8 +17,8 @@ const (
 	BinVolumeName    = "oneagent-bin"
 	ldPreloadPath    = "/etc/ld.so.preload"
 	ldPreloadSubPath = preload.ConfigPath
+	AnnotationStorageClass       = "pvc-webhook/storage-class" // optional
 	AnnotationOneAgenBinResource = "pvc-webhook/storage-size"   // or your prior key for size; keep existing if different
-        AnnotationStorageClass       = "pvc-webhook/storage-class" // optional
 )
 
 func addVolumeMounts(container *corev1.Container, installPath string) {
