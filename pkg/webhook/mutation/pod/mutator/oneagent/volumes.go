@@ -76,8 +76,8 @@ func addEmptyDirBinVolume(pod *corev1.Pod) {
 		},
 	)
 }
+*/
 
-// Above funtion is replaced by this:
 // addEphemeralBinVolume converts the previous emptyDir volume into a Generic Ephemeral Volume
 // backed by a PVC created via VolumeClaimTemplate. Kubernetes will create/bind the PVC before
 // starting containers and delete it when the Pod is deleted (no external controller needed).
@@ -103,7 +103,6 @@ func addEphemeralBinVolume(pod *corev1.Pod) {
 		scPtr = &sc
 	}
 
-<<<<<<< HEAD
 	// --- build the ephemeral volume ---
 	vol := corev1.Volume{
 		Name: BinVolumeName, // keep your existing constant
@@ -132,35 +131,6 @@ func addEphemeralBinVolume(pod *corev1.Pod) {
 			},
 		},
 	}
-=======
-    volumeSource := corev1.VolumeSource{
-        PersistentVolumeClaim: &corev1.PersistentVolumeClaimVolumeSource{
-            ClaimName: oneagent-bin-pvc,
-        },
-    }
-
-    pod.Spec.Volumes = append(pod.Spec.Volumes,
-        corev1.Volume{
-            Name:         BinVolumeName,
-            VolumeSource: volumeSource,
-        },
-    )
-
-    // annotate pod with PVC metadata so controller can pick it up
-    if pod.Annotations == nil {
-        pod.Annotations = map[string]string{}
-    }
-
-        if _, ok := pod.Annotations["pvc-webhook/storage-size"]; !ok {
-        pod.Annotations["pvc-webhook/storage-size"] = "2Gi"
-    }
-    if _, ok := pod.Annotations["pvc-webhook/storage-class"]; !ok {
-        pod.Annotations["pvc-webhook/storage-class"] = "robin-repl-3"
-    }
-    if _, ok := pod.Annotations["pvc-webhook/claim"]; !ok {
-        pod.Annotations["pvc-webhook/claim"] = "oneagent-bin-pvc"
-    }
->>>>>>> origin/main
 
 	// --- replace existing volume with same name, or append if missing ---
 	for i := range pod.Spec.Volumes {
@@ -172,88 +142,6 @@ func addEphemeralBinVolume(pod *corev1.Pod) {
 	pod.Spec.Volumes = append(pod.Spec.Volumes, vol)
 }
 
-// The end of new function
-
-func addEphemeralBinVolume(pod *corev1.Pod) {
-    // Skip if the volume already exists
-    if volumeutils.IsIn(pod.Spec.Volumes, BinVolumeName) {
-        return
-    }
-
-    // Hardcoded storage request
-    storageReq := resource.MustParse("2Gi")
-
-    pvcSpec := corev1.PersistentVolumeClaimSpec{
-        AccessModes: []corev1.PersistentVolumeAccessMode{
-            corev1.ReadWriteOnce, // fixed mode
-        },
-        Resources: corev1.ResourceRequirements{
-            Requests: corev1.ResourceList{
-                corev1.ResourceStorage: storageReq,
-            },
-        },
-    }
-
-    // Create ephemeral volume source with PVC template
-    volumeSource := corev1.VolumeSource{
-        Ephemeral: &corev1.EphemeralVolumeSource{
-            VolumeClaimTemplate: &corev1.PersistentVolumeClaimTemplate{
-                Spec: pvcSpec,
-            },
-        },
-    }
-
-    // Inject into Pod spec
-    pod.Spec.Volumes = append(pod.Spec.Volumes,
-        corev1.Volume{
-            Name:         BinVolumeName,
-            VolumeSource: volumeSource,
-        },
-    )
-}
-
-*/
-
-func addEphemeralBinVolume(pod *corev1.Pod) {
-    // Skip if the volume already exists
-    for _, v := range pod.Spec.Volumes {
-        if v.Name == BinVolumeName {
-            return
-        }
-    }
-
-    // Hardcoded storage request
-    storageReq := resource.MustParse("2Gi")
-
-    // Create PVC spec with standard ResourceRequirements
-    pvcSpec := corev1.PersistentVolumeClaimSpec{
-        AccessModes: []corev1.PersistentVolumeAccessMode{
-            corev1.ReadWriteOnce, // fixed mode
-        },
-        Resources: corev1.ResourceRequirements{
-            Requests: corev1.ResourceList{
-                corev1.ResourceStorage: storageReq,
-            },
-        },
-    }
-
-    // Create ephemeral volume source with PVC template
-    volumeSource := corev1.VolumeSource{
-        Ephemeral: &corev1.EphemeralVolumeSource{
-            VolumeClaimTemplate: &corev1.PersistentVolumeClaimTemplate{
-                Spec: pvcSpec,
-            },
-        },
-    }
-
-    // Inject into Pod spec
-    pod.Spec.Volumes = append(pod.Spec.Volumes,
-        corev1.Volume{
-            Name:         BinVolumeName,
-            VolumeSource: volumeSource,
-        },
-    )
-}
 
 func addCSIBinVolume(pod *corev1.Pod, dkName string, maxTimeout string) {
 	if volumeutils.IsIn(pod.Spec.Volumes, BinVolumeName) {
